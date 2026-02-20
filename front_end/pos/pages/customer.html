@@ -42,7 +42,7 @@
 
         .card {
             border: 1px solid rgba(255,255,255,.08);
-            background: rgba(15, 23, 42, .75);
+            background: rgba(48, 135, 42, .75);
             color: #e5e7eb;
             border-radius: 18px;
         }
@@ -71,7 +71,7 @@
             font-weight: 700;
         }
 
-        .btn-success { box-shadow: 0 10px 20px rgba(34, 197, 94, .15); }
+        .btn-primary { box-shadow: 0 10px 20px rgba(34, 197, 94, .15); }
         .btn-warning { box-shadow: 0 10px 20px rgba(245, 158, 11, .12); }
         .btn-danger  { box-shadow: 0 10px 20px rgba(239, 68, 68, .12); }
         .btn-secondary { box-shadow: 0 10px 20px rgba(148, 163, 184, .10); }
@@ -157,7 +157,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container app-shell">
         <a class="navbar-brand" href="#">
-            <span class="me-2">🧾</span>Mini POS
+            <span class="me-2"></span>MINI POS SYSTEM
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -181,17 +181,13 @@
     <div class="top-bar mb-3">
         <div>
             <h2 class="section-title mb-1">Customers</h2>
-            <div class="subtle">Create, update and manage your customers.</div>
         </div>
-        <div class="badge-soft">
-            🔎 Tip: Click a row to load data into the form
-        </div>
+
     </div>
 
     <div class="card shadow-lg p-4 p-lg-5 mb-4">
         <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
             <h4 class="mb-0 section-title">Customer Form</h4>
-            <span class="subtle">Fields are validated by your backend</span>
         </div>
 
         <hr class="muted-hr my-3">
@@ -199,25 +195,25 @@
         <div class="row g-3">
             <div class="col-md-4">
                 <label class="form-label">ID</label>
-                <input type="text" id="cusId" class="form-control" placeholder="Auto / Select from table">
-                <div class="form-text subtle">For update/delete, select a row.</div>
+                <input type="text" id="cusId" class="form-control">
+
             </div>
 
             <div class="col-md-4">
                 <label class="form-label">Name</label>
-                <input type="text" id="cusName" class="form-control" placeholder="Enter name">
-                <div class="form-text subtle">Letters & spaces (3–50).</div>
+                <input type="text" id="cusName" class="form-control" >
+
             </div>
 
             <div class="col-md-4">
                 <label class="form-label">Address</label>
-                <input type="text" id="cusAddress" class="form-control" placeholder="Enter address">
-                <div class="form-text subtle">10–100 characters.</div>
+                <input type="text" id="cusAddress" class="form-control">
+
             </div>
         </div>
 
         <div class="mt-4 d-flex gap-2 flex-wrap">
-            <button class="btn btn-success px-4" id="btnAdd" type="button">Add</button>
+            <button class="btn btn-primary px-4" id="btnAdd" type="button">Add</button>
             <button class="btn btn-warning px-4" id="btnUpdate" type="button">Update</button>
             <button class="btn btn-danger px-4" id="btnDelete" type="button">Delete</button>
             <button class="btn btn-secondary px-4" id="btnClear" type="button">Clear</button>
@@ -227,7 +223,7 @@
     <div class="card shadow-lg p-4 p-lg-5">
         <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
             <h4 class="mb-0 section-title">Customer Table</h4>
-            <span class="subtle">Latest data from backend</span>
+
         </div>
 
         <hr class="muted-hr my-3">
@@ -247,9 +243,7 @@
             </div>
         </div>
 
-        <div class="subtle mt-3">
-            <small>Tip: Use <b>Clear</b> to reset the form quickly.</small>
-        </div>
+
     </div>
 
 </div>
